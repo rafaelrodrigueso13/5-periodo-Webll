@@ -1,0 +1,13 @@
+# USANDO UMA MÁQUINA DOCKER
+FROM alpine:latest
+
+# Instalação do SQLite
+RUN apk add --no-cache sqlite
+
+# Diretório de trabalho
+
+WORKDIR /data
+
+# Entrada padrão do contêiner
+
+CMD [ "sqlite3" ]
