@@ -1,0 +1,26 @@
+@host = http://localhost:3000
+
+POST {{host}}//api/produtos
+Content-Type: application/sjon
+
+{
+    "nome": "Notebook",
+    "preco": 4500.98,
+    "quantidade": 200
+}
+
+### LISTAR
+GET {{host}}/api/produtos
+
+### OBTER PRO ID
+GET {{host}}/api/produtos/_____________
+
+### Atualizar
+PUT {{host}}/api/produtos/_____________
+Content-Type: application/json
+{
+    "preco": 6000.00
+}
+
+### Deletar
+DELETE {{host}}/api/produtos/______________
