@@ -14,7 +14,7 @@ import com.example.projeto.service.VeiculoService;
 import com.example.projeto.model.Veiculo;
 
 @RestController
-@RequestMapping("/api/produtos")
+@RequestMapping("/api/veiculos")
 public class VeiculoController{
     
     private final VeiculoService veiculoService;
