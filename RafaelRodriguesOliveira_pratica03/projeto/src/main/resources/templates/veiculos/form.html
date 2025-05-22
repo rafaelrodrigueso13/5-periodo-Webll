@@ -15,15 +15,10 @@
 
         <h1>Cadastrar Veiculo(s)</h1>
         <form th:action="@{/veiculos/cadastrar}" th:object="${veiculo}" method="post">
-            <div>
-                <label>Nome: </label>
-                <input type="text" th:field="*{nome}" placeholder="Nome Veiculo" />
-                <div th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"></div>
-            </div>
 
             <div>
                 <label>Modelo: </label>
-                <input type="number" th:field="*{modelo}" />
+                <input type="text" th:field="*{modelo}" />
                 <div th:if="${#fields.hasErrors('modelo')}" th:errors="*{modelo}"></div>
             </div>
 

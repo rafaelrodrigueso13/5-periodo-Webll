@@ -17,7 +17,6 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nome</th>
                     <th>Quantidade</th>
                     <th>Valor</th>
                     <th>Ações</th>
@@ -26,7 +25,6 @@
             <tbody>
                 <tr th:each="veiculo: ${lista}">
                     <td th:text="${veiculo.id}"></td>
-                    <td th:text="${veiculo.nome}"></td>
                     <td th:text="${veiculo.modelo}"></td>
                     <td th:text="${veiculo.ano}"></td>
                     <td th:text="${veiculo.valor}"></td>
